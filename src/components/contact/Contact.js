@@ -1,65 +1,65 @@
-import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
+// import React, { useState } from "react";
+// import emailjs from "@emailjs/browser";
 // import axios from "axios";
-import { FiSend } from "react-icons/fi";
+// import { FiSend } from "react-icons/fi";
 import Title from "../home/Title";
 
 const Contact = () => {
-  const [clientName, setClientName] = useState("");
-  const [email, setEmail] = useState("");
-  const [messages, setMessages] = useState("");
-  const [successMsg, setSuccessMsg] = useState("");
-  const [errClientName, setErrClientName] = useState(false);
-  const [errEmail, setErrEmail] = useState(false);
-  const [errMessages, setErrMessage] = useState(false);
+  // const [clientName, setClientName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [messages, setMessages] = useState("");
+  // const [successMsg, setSuccessMsg] = useState("");
+  // const [errClientName, setErrClientName] = useState(false);
+  // const [errEmail, setErrEmail] = useState(false);
+  // const [errMessages, setErrMessage] = useState(false);
 
-  const handleName = (e) => setClientName(e.target.value);
-  const handleEmail = (e) => setEmail(e.target.value);
-  const handleMessages = (e) => setMessages(e.target.value);
+  // const handleName = (e) => setClientName(e.target.value);
+  // const handleEmail = (e) => setEmail(e.target.value);
+  // const handleMessages = (e) => setMessages(e.target.value);
   // ================= Email Validation Start here ===============
-  const EmailValidation = (email) => {
-    return String(email)
-      .toLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-  };
+  // const EmailValidation = (email) => {
+  //   return String(email)
+  //     .toLowerCase()
+  //     .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  // };
   // ================= Email Validation End here =================
 
-  const handleSend = (e) => {
-    e.preventDefault();
+  // const handleSend = (e) => {
+  //   e.preventDefault();
 
-    // Error handling
-    setErrClientName(!clientName);
-    setErrEmail(!email || !EmailValidation(email));
-    setErrMessage(!messages);
+  //   // Error handling
+  //   // setErrClientName(!clientName);
+  //   // setErrEmail(!email || !EmailValidation(email));
+  //   // setErrMessage(!messages);
 
-    if (clientName && email && EmailValidation(email) && messages) {
-      const templateParams = {
-        clientName,
-        email,
-        messages,
-      };
+  //   if (clientName && email && EmailValidation(email) && messages) {
+  //     const templateParams = {
+  //       clientName,
+  //       email,
+  //       messages,
+  //     };
 
-      // Use EmailJS to send the email
-      emailjs
-        .send(
-          "service_xqxrcnv", // Replace with your Service ID
-          "template_8t9nn3i", // Replace with your Template ID
-          templateParams,
-          "3g5HNCEtUZd2yc6IC"
-        )
-        .then(() => {
-          setSuccessMsg(
-            `Hello dear ${clientName}, Your message has been sent successfully. Thank you for your time!`
-          );
-          setClientName("");
-          setEmail("");
-          setMessages("");
-        })
-        .catch((error) => {
-          console.error("Email sending failed:", error);
-        });
-    }
-  };
+  //     // Use EmailJS to send the email
+  //     emailjs
+  //       .send(
+  //         "service_xqxrcnv", // Replace with your Service ID
+  //         "template_8t9nn3i", // Replace with your Template ID
+  //         templateParams,
+  //         "3g5HNCEtUZd2yc6IC"
+  //       )
+  //       .then(() => {
+  //         setSuccessMsg(
+  //           `Hello dear ${clientName}, Your message has been sent successfully. Thank you for your time!`
+  //         );
+  //         setClientName("");
+  //         setEmail("");
+  //         setMessages("");
+  //       })
+  //       .catch((error) => {
+  //         console.error("Email sending failed:", error);
+  //       });
+  //   }
+  // };
   
 
   return (
