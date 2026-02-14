@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3505fdf5.css",
+    "main.js": "/static/js/main.91075a8c.js",
+    "static/media/updatedLogo.png": "/static/media/updatedLogo.092ce71837746dfc4669.png",
+    "static/media/fields.jpg": "/static/media/fields.0025afd9ec9614004ff4.jpg",
+    "static/media/winston.jpg": "/static/media/winston.86545a5dff107fd20478.jpg",
+    "static/media/Khushbu-Web-developer-Resume.pdf": "/static/media/Khushbu-Web-developer-Resume.79d297fd60e8c8352dcc.pdf",
+    "static/media/bloomin.jpg": "/static/media/bloomin.9a9f7488ee271a004161.jpg",
+    "static/media/promotablecover.jpg": "/static/media/promotablecover.677eba43ef220d7c813b.jpg",
+    "index.html": "/index.html",
+    "main.3505fdf5.css.map": "/static/css/main.3505fdf5.css.map",
+    "main.91075a8c.js.map": "/static/js/main.91075a8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3505fdf5.css",
+    "static/js/main.91075a8c.js"
+  ]
+}

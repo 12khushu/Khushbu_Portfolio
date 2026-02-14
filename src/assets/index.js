@@ -1,5 +1,5 @@
 // import bannerImg from "./bannerImg.png";
-import bannerImg from "./logoNew1.png";
+import bannerImg from "./updatedLogo.png";
 import workImgOne from "./work/promotablecover.jpg"
 import workImgTwo from "./work/bloomin.jpg"
 import workImgThree from "./work/winston.jpg"
